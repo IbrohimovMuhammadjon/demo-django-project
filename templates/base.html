@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        a {
+            margin-right: 50px; 
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+        <h2>Choose one of the categories</h2>
+        <a href="{% url 'about' %}">About page</a>
+        <a href="{% url 'home' %}">Home page</a>
+    {% endblock content %}
+</body>
+</html>
